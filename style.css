@@ -1,0 +1,243 @@
+/*
+Theme Name: Arsal Theme
+Author: Arsal
+Description: My first custom WordPress theme
+Version: 1.0
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin-left: 0;
+}
+
+/* Header container */
+.site-header {
+  display: flex;              /* logo + nav side by side */
+  align-items: center;        /* vertically center */
+  justify-content: space-between; /* logo left, menu right */
+  padding: 10px 60px;         /* spacing around header */
+}
+
+/* Logo styling */
+.logo img {
+  border-radius: 70px;        /* circular logo */
+  width: 100px;
+  height: 100px;
+}
+
+/* Navigation menu */
+.main-nav {
+  display: flex;              /* horizontal layout */
+  gap: 20px;                  /* spacing between links */
+}
+
+/* Target the UL that WordPress generates */
+.main-nav ul {
+  display: flex;        /* puts items in a row */
+  gap: 20px;            /* spacing between items */
+  list-style: none;     /* remove bullets */
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the links */
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #0073aa;       /* hover color */
+}
+
+
+
+.hero-image {
+  background-image: url('images/architecture-bungalow-chimney-1569003.jpg');
+  background-color: rgba(0,0,0,0.4);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+.cta-btn {
+  background:aqua; 
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;       
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3); 
+  
+}
+
+.cta-btn:hover {
+  background:#555; 
+  box-shadow: 0px 6px 14px rgba(0,0,0,0.4);
+}
+
+
+.form-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  margin-top: 80px;
+
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;              
+  justify-content:space-around; 
+  align-items: flex-end;    
+}
+
+.text-box {
+  width: 50%;                 
+  padding: 20px;
+   margin-left: 50px;
+  margin-bottom: 100px;
+  margin-top: 80px;
+  color: white;
+}
+
+.form-box {
+  width: 40%;                 
+  background: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-box input, .form-box button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-box button {
+  background:aqua;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background: #555;
+}
+
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding: 20px 30px;
+  text-align: center;
+  width: 300px;
+  min-height: 100px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+.service-card i {
+  font-size: 40px;   
+  color: teal;       
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.hero-2 {
+margin-bottom: 50px;
+margin-right: 100px;
+}
+#farmhouse {
+ margin-top: 50px;
+ margin-left: 45px;
+}
+/*MAP*/
+.map-responsive {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 ratio */
+}
+
+.contact-section {
+    display: flex;
+    gap: 80px;
+    align-items: stretch;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.form-container,
+.map-container {
+    flex: 1;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-container input,
+.form-container textarea {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.form-container button {
+    background-color: aqua;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+}
+.form-container button:hover {
+  background: #555;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border: 0;
+}
