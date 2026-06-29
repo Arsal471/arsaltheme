@@ -53,59 +53,91 @@ body {
   color: #0073aa;       /* hover color */
 }
 
-
-
 .hero-image {
-  background-image: url('images/architecture-bungalow-chimney-1569003.jpg');
   background-color: rgba(0,0,0,0.4);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
+
 }
-.cta-btn {
-  background:aqua; 
+
+.hero-div {
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+/* hero content */
+
+.hero-content {
+    font-family: Arial, sans-serif;
+	gap: 10px;
+	margin: 100px 0px 100px 40px;
+
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: white;
+  line-height: 1.6;
+  margin: 0 auto 20px;
+}
+
+.hero-btn {
+  background: #00bcd4;
   color: white;
   border: none;
-  padding: 12px 25px;
-  border-radius: 30px;       
+  padding: 12px 20px;
+  border-radius: 20px;
+  cursor: pointer;
   font-size: 16px;
   font-weight: bold;
+}
+
+/* Form styling */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 100px 0px 100px 0px;
+}
+
+form input {
+  padding: 12px;
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+form input:focus {
+  border-color: #00bcd4;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+}
+
+form button {
+  background: #00bcd4;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 20px;
   cursor: pointer;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.3); 
-  
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.cta-btn:hover {
-  background:#555; 
-  box-shadow: 0px 6px 14px rgba(0,0,0,0.4);
+form button:hover {
+  background: #0097a7;
 }
 
-
-.form-box {
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-  width: 300px;
-  text-align: center;
-  margin-right: 100px;
-  margin-bottom: 100px;
-  margin-top: 80px;
-
-}
-
-.form-box h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.form-box input {
-  width: 90%;
-  padding: 10px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
 
 .container {
   display: flex;              
@@ -196,7 +228,6 @@ margin-right: 100px;
 .contact-section {
     display: flex;
     gap: 80px;
-    align-items: stretch;
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
